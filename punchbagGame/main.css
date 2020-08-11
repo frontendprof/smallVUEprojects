@@ -9,6 +9,12 @@
 }
 
 
+#bag.burst{
+    background:url(./img/bag-burst.png) center no-repeat;
+    background-size: 80%;
+
+}
+
 #bag-health{
     width: 200px;
     border:2px solid rgb(91, 84, 189);
@@ -23,7 +29,8 @@
 
 #controls{
     width: 120px;
-    margin:0 auto;
+    margin:10px auto;
+    display: flex;
 }
 
 

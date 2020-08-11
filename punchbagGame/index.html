@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="main.css">
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue"></script> -->
 
     <title>Punchbag Game VUEjs</title>
 </head>
@@ -16,21 +17,21 @@
 
         <!-- bag image -->
 
-        <div id="bag"></div>
+        <div id="bag" v-bind:class="{burst:ended,}"></div>
 
 
         <!-- bag health -->
 
         <div id="bag-health">
-            <div></div>
+            <div v-bind:style="{width:health + '%'}"></div>
         </div>
 
 
         <!-- game controls -->
 
         <div id="controls">
-            <button>Punch</button>
-            <button>Restart</button>
+            <button v-on:click="punch" v-show="!ended">Punch</button>
+            <button v-on:click="restart">Restart</button>
         </div>
 
     </div>
