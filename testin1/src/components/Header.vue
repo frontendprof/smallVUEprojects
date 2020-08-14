@@ -1,5 +1,9 @@
 <template>
 
+    <header>
+        <h1>{{title}}</h1>
+    </header>
+
 
 </template>
 
@@ -9,13 +13,23 @@
 export default {
   data(){
       return{
-
+          title:"First Vue Projects"
       }
   }
 }
 </script>
 
-<style>
+<style scoped>
+
+header{
+    background: lightgreen;
+    padding:10px;
+}
+
+h1{
+    color:#222;
+    text-align:center;
+}
 
 
 </style>
