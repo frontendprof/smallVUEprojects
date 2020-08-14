@@ -3,6 +3,7 @@
 <div>
 
   <app-header></app-header>
+  <app-ninjas></app-ninjas>
 
   <app-footer></app-footer>
 
@@ -14,10 +15,12 @@
 <script>
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
+import Ninjas from './components/Ninjas.vue';
 
 export default {
   components:{
     'app-header':Header,
+    'app-ninjas':Ninjas,
     'app-footer':Footer
   },
   data(){
