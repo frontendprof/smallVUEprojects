@@ -4,10 +4,8 @@
     <div class="basic-calc">
 
       <div class="display">{{current ||"0"}}</div>
-      <div @click="clear" class="btn">C</div>
-      <div @click="sign" class="btn">+/-</div>
-      <div class="btn">%</div>
-      <div class="btn oper">&divide;</div>
+      <div @click="clear" class="btn clear">C</div>
+      <div @click="sign" class="btn remove">Del</div>
       <div class="btn">7</div>
       <div class="btn">8</div>
       <div class="btn">9</div>
@@ -20,9 +18,11 @@
       <div class="btn">2</div>
       <div class="btn">3</div>
       <div class="btn oper">+</div>
-      <div class="btn zero">0</div>
+      <div class="btn">0</div>
       <div class="btn">.</div>
-      <div class="btn oper">=</div>
+      <div class="btn oper">&divide;</div>
+      <div class="btn oper">=</div>   
+    
 
     </div>
   
@@ -41,11 +41,9 @@ export default {
 
     clear(){
       this.current="";
-    },
-
-    sign(){
-      this.current=this.current.charAt(0)==="-"?this.current.slice(1):`${this.current}`
     }
+
+    
   }
   
 }
