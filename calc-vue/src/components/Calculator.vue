@@ -59,7 +59,35 @@ export default {
   grid-auto-rows: minmax(50px,auto);
   margin:0 auto;
   width: 400px;
+  font-size: 40px;
 }
+
+.display{
+  grid-column: 1/5;
+  background-color: #333;
+  color:#fff;
+}
+
+.clear{
+  grid-column: 1/3;
+}
+
+.remove{
+  grid-column: 3/5;
+}
+
+.btn{
+  background-color: #f2f2f2;
+  border:1px solid #999;
+  cursor:pointer;
+}
+
+.oper{
+  background-color: rgb(49,120,148);
+  color:#fff;
+}
+
+
 
 
 </style>
