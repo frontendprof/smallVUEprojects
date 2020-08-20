@@ -1,6 +1,7 @@
 <template>
   <div id="id">
-    <Calculator />
+    <img src="./assets/logo.png" alt="Vue logo">
+    <Calculator msg="Vue js Calculator project"/>
   </div>
 </template>
 
