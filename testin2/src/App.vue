@@ -2,8 +2,24 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <form-helper>
-      <h2 slot="title">I am the slot title</h2>
-      <h3 slot="sec">I am the second one, huh?</h3>
+
+      <div slot="form-header">
+        <h3>This is the title of the form</h3>
+        <p>Information about the form</p>
+      </div>
+
+      <div slot="form-fields">
+        <input type="text" placeholder="Name" required>
+        <input type="password" placeholder="Password" required>
+      </div>
+
+
+      <div slot="form-controls">
+        <button v-on:click="handleSubmit">Submit</button>
+        
+      </div>
+
+
     </form-helper>
   </div>
 </template>
@@ -17,6 +33,7 @@ export default {
   },
   data(){
     return{
+      title:"I am the slot title from data function"
       
     }
   }
@@ -25,11 +42,17 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  
+  text-align: right;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 5px;
+  position: relative;
+}
+
+img{
+  height: 10rem;
+  position: absolute;
+  right:20px;
+  top:15rem;
 }
 </style>
