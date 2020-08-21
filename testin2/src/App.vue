@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" id="imgFile" src="./assets/logo.png">
     <form-helper>
 
       <div slot="form-header">
@@ -15,7 +15,7 @@
 
 
       <div slot="form-controls">
-        <button v-on:click="handleSubmit">Submit</button>
+        <button class="btn btn-large btn-success" v-on:click="handleSubmit">Submit</button>
         
       </div>
 
@@ -36,23 +36,29 @@ export default {
       title:"I am the slot title from data function"
       
     }
+  },
+
+  methods:{
+    handleSubmit:function(){
+      alert("Thanks for submitting")
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  
-  text-align: right;
+
+#app { 
+  text-align: center;
   color: #2c3e50;
   margin-top: 5px;
   position: relative;
 }
 
-img{
+#imgFile{
   height: 10rem;
   position: absolute;
   right:20px;
-  top:15rem;
+  top:14rem;
 }
 </style>

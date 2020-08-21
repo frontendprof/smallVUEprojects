@@ -62,12 +62,13 @@ form{
 }
 #useful-links li{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5rem;
 }
 form > div{
     padding: 20px;
-    background: #eee;
+    background: rgb(223, 219, 219);
     margin: 20px 0;
+    
 }
 #form-header{
     background: #ddd;
